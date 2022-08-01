@@ -1,0 +1,44 @@
+[
+    {
+      "id": "001",
+      "titulo": "Mi Primer Balance 'Desde Cero'",
+      "precio": 10500,
+      "img": "./multimedia/cursos/balance.png",
+      "descripcion": ""
+    },
+    {
+      "id": "002",
+      "titulo": "Clases Particulares",
+      "precio": 1500,
+      "img": "./multimedia/cursos/clases.png",
+      "descripcion": ""
+    },
+    {
+      "id": "003",
+      "titulo": "Iniciación Profesional",
+      "precio": 15000,
+      "img": "./multimedia/cursos/iniciacion.png",
+      "descripcion": ""
+    },
+    {
+      "id": "004",
+      "titulo": "Monotributo: Capacitación Integral",
+      "precio": 7800,
+      "img": "./multimedia/cursos/monotributo.png",
+      "descripcion": ""
+    },
+    {
+      "id": "005",
+      "titulo": "Convenio Multilateral",
+      "precio": 9000,
+      "img": "./multimedia/cursos/convenio.png",
+      "descripcion": ""
+    },
+    {
+      "id": "006",
+      "titulo": "Ajuste por Inflación",
+      "precio": 12000,
+      "img": "./multimedia/cursos/ajuste.png",
+      "descripcion": ""
+    }
+  ]

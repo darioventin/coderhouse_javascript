@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--SEO-->
+    <meta name="description" content="Presentación del responsable detrás del sitio web">
+    <meta name="keywords" content="Contador, Facultad, Presentación, Sobre Mi, Universidad">
+    
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!--LIBRERIAS JAVASCRIPT-->
+        <!--SweetAlertJS -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!--ToastifyJS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <!--LUXON -->
+        <script src="https://cdn.jsdelivr.net/npm/luxon@2.4.0/build/global/luxon.min.js"></script>
+        
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!--TITULO-->
+    <title>Sobre Mi | Estudio Ventín</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+    <!--ENCABEZADO-->
+        <header>
+
+            <div class="row header--colorBarraNavegacion">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                
+                <nav class="navbar navbar-expand-lg navbar-dark header--colorBarraNavegacion">
+                
+                    <!--<a class="navbar-brand" href="#"></a>-->
+                    
+                    <!--Logo-->
+                    <img src="../multimedia/imagenes/logo fondo azul.png" class="img-fluid" alt="logo">
+
+                    <!--Menú hamburguesa-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--Menú de navegación-->
+                    <div class="collapse navbar-collapse header--colorBarraNavegacion" id="navbarSupportedContent">
+                        
+                        <ul class="navbar-nav mr-auto ">
+                            <!--Home-->
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../index.html">Home<span class="sr-only">Home</span></a>
+                            </li>
+                            <!--Sobre mi-->
+                            <li class="nav-item active">
+                                <a class="nav-link" href="sobremi.html">Sobre mí</a>
+                            </li>
+                          <!--Servicios-->
+                          <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicio</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" target="" href="servicios.html">Asesoramientos</a>
+                                    <a class="dropdown-item" target="blank" href="cursos.html">Cursos</a>
+                                </div>
+                        </li>
+                            <!--Sitios de interés-->
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="sitiosdeinteres.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sitios de interés</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" target="" href="sitiosdeinteres.html">Accesos directos</a>
+                                        <a class="dropdown-item" target="blank" href="https://blogdelcontador.com.ar/">El Blog del Contador</a>
+                                        <a class="dropdown-item" target="blank" href="https://www.errepar.com/">Errepar</a>
+                                        <a class="dropdown-item" target="blank" href="https://www.eco.unc.edu.ar/">FCE</a>
+                                        <a class="dropdown-item" target="blank" href="https://www.ignacioonline.com.ar/">Ignacio Online</a>
+                                    </div>
+                            </li>
+                            <!--Contacto-->
+                            <li class="nav-item active">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                            <!--Acceso a clientes-->
+                            <a class="btn btn-outline-success" href="clientes.html" role="button">Acceso a clientes</a>
+
+
+                            <!--Carrito de compras-->
+
+                            <a class='cart' href="carrito.html">
+                                <img class="cartIcon" src="../multimedia/imagenes/carrito.png" alt="foto del carrito" >
+                                <span id="cartCounter"></span>
+                            </a>
+
+                    </div> <!--Cierra <div class="collapse navbar-collapse colorBarraNavegacion" id="navbarSupportedContent">-->
+                </nav>
+
+            </div> <!--Cierra <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+            </div> <!--Cierra <div class="row colorBarraNavegacion">-->
+        
+        </header>
+
+
+    <!--MAIN-->
+    <main>
+        <!--QUIEN SOY-->  
+
+        <div class="row sobre mi">
+            
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                    <h1>¿Quién soy?</h1>
+
+            </div><!--Cierre <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                
+                <div class="gridsSobreMi">
+                
+                    <!--Imagen 1-->
+                        <div class="imagen1">
+                            <img src="../multimedia/imagenes/fotoprofesional.jpeg" alt="fotoprofesional">
+                        </div>
+                    
+                    <!--Párrafo-->
+                        <div class="quienSoy">
+                            <p class="main__p--tamañoLetraParrafo">Me llamo <strong>Darío Ventín</strong>, tengo 32 años. Soy cordobés, de la ciudad de La Calera, actualmente viviendo en Villa Carlos Paz.</p>
+                            <p class="main__p--tamañoLetraParrafo">Soy contador, egresado de la <strong>Facultad de Ciencias Económicas</strong> de la Universidad Nacional de Córdoba.</p>
+                            <p class="main__p--tamañoLetraParrafo">Me dedico a la actividad privada en relación de dependencia y <strong>desde 2012</strong> llevo adelante mi estudio contable de manera independiente.</p>
+                            <p class="main__p--tamañoLetraParrafo">Cuento con experiencia en los rubros: comercial, inmobiliario, manufacturero, marketing & publicidad, seguros, entre otros.</p>
+                        </div>
+                    
+                    <!--Imagen 2-->
+                        <div class="imagen2">
+                            <img src="../multimedia/imagenes/egreso.jpg" alt="foto de egreso">
+                        </div>
+                
+                </div>
+        
+            </div><!--Cierre <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+        
+        </div><!--<div class="row sobre mi">-->
+
+
+        <!--FACULTAD-->
+        <div class="row facultad">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <div>
+                <aside>
+                    <h2>Facultad de Ciencias Económicas</h2>
+                    <p>¡Conocé la facu en la que me recibí!</p>
+                    <video src="../multimedia/videos/unc fce.mp4" controls class="aside__video--tamaño" alt="video facultad"></video>
+                </aside>
+            </div>
+
+        </div> <!--Cierra <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+        </div> <!--Cierra <div class="row facultad">-->
+
+    </main>
+
+    </div><!--Cierra <div class="container-fluid">-->
+
+    <!--FOOTER-->
+
+    <div class="footer--formatoFooter">
+        <footer id="footer--formatoFlexbox">
+            <div class="footer--pieDePaginaTamañoUno">
+                <p>¡Seguime en mis redes sociales!
+                    <br>
+                    <br>
+                    <!--Facebook-->
+                    <a target="blank" href="https://www.facebook.com/dario.ventin/" class="footer--linkFooter"><svg
+                            xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                            width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg></a>
+                    <!--Instagram-->
+                    <a target="blank" href="https://www.instagram.com/nanoventin/" class="footer--linkFooter"><svg
+                            xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                            width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                            <circle cx="12" cy="12" r="3" />
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" /></svg></a>
+                    <!--Linkedin-->
+                    <a target="blank" href="https://www.linkedin.com/in/darioventin/" class="footer--linkFooter"><svg
+                            xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
+                            width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <line x1="8" y1="11" x2="8" y2="16" />
+                            <line x1="8" y1="8" x2="8" y2="8.01" />
+                            <line x1="12" y1="16" x2="12" y2="11" />
+                            <path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg></a>
+                    <!--Twitter-->
+                    <a target="blank" href="https://twitter.com/nanoventin" class="footer--linkFooter"><svg
+                            xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="32"
+                            height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                            </svg></a>
+                </p>
+            </div><!--Cierra <div class="pieDePaginaTamañoUno">-->
+            <div class="footer--pieDePaginaTamañoDos">
+                <p>Recibí las noticias más importantes de la semana en tu correo.
+                    <br>
+                    <input type="email" id="email" placeholder="Ingrese su email..." required>
+                    <button type="button" class="btn btn-light">¡Suscribir!</button>
+                </p>
+            </div><!--Cierra <div class="pieDePaginaTamañoDos">-->
+            <div class="footer--pieDePaginaTamañoTres">
+                    <p>Contacto:
+                        <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="12"
+                            height="12" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <polyline points="3 7 12 13 21 7" /></svg> estudioventin@outlook.com
+                        <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp"
+                            width="12" height="12" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                            <path
+                                d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                            </svg> +54 9 351 5640940
+                    </p>
+            </div><!--Cierra <div class=" pieDePaginaTamañoTres">-->
+        </footer> <!--Cierra <footer id="footerFlexbox">-->
+    </div><!--Cierra <div class="footer formatoFooter">-->
+
+
+    <!--BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <!--ENLACE JAVASCRIPT-->
+    <script src="../javascript/index.js"></script>
+    <script src="../javascript/carrito.js"></script>
+    <script src="../javascript/cursos.js"></script>
+
+
+</body>
+
+</html>

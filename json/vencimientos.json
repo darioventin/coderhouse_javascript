@@ -1,0 +1,26 @@
+[
+    {
+        "dia": "Viernes",
+        "fecha": "05/08/2022",
+        "concepto": "Autónomos"
+    },
+    {
+        "dia": "Martes",
+        "fecha": "09/08/2022",
+        "concepto": "Empleadores"
+    },
+    {
+        "dia": "Miércoles",
+        "fecha": "10/08/2022",
+        "concepto": "Casas Particulares"
+    },
+    {
+        "dia": "Jueveses",
+        "fecha": "18/08/2022",
+        "concepto": "IVA y Libro IVA Digital"
+    },{
+        "dia": "Lunes",
+        "fecha": "22/08/2022",
+        "concepto": "Monotributo"
+    }
+]

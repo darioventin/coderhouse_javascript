@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--SEO-->
+    <meta name="description" content="Servicios contables y gestión para los usuarios">
+    <meta name="keywords" content="Servicios, Profesionales, Contador, Contabilidad, Contable, Administración, Sociedades, Laboral, Impuestos, Finanzas, Monotributo, Previsional">
+    
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!--LIBRERIAS JAVASCRIPT-->
+        <!--SweetAlertJS -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!--ToastifyJS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <!--LUXON -->
+        <script src="https://cdn.jsdelivr.net/npm/luxon@2.4.0/build/global/luxon.min.js"></script>
+    
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!--TITULO-->
+    <title>Servicios | Estudio Ventín</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+    <!--ENCABEZADO-->
+        <header>
+
+            <div class="row header--colorBarraNavegacion">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                
+                <nav class="navbar navbar-expand-lg navbar-dark header--colorBarraNavegacion">
+                
+                    <!--<a class="navbar-brand" href="#"></a>-->
+                    
+                    <!--Logo-->
+                    <img src="../multimedia/imagenes/logo fondo azul.png" class="img-fluid" alt="logo">
+
+                    <!--Menú hamburguesa-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--Menú de navegación-->
+                    <div class="collapse navbar-collapse header--colorBarraNavegacion" id="navbarSupportedContent">
+                        
+                        <ul class="navbar-nav mr-auto ">
+                            <!--Home-->
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../index.html">Home<span class="sr-only">Home</span></a>
+                            </li>
+                            <!--Sobre mi-->
+                            <li class="nav-item active">
+                                <a class="nav-link" href="sobremi.html">Sobre mí</a>
+                            </li>
+                          <!--Servicios-->
+                          <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicio</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" target="" href="servicios.html">Asesoramientos</a>
+                                    <a class="dropdown-item" target="blank" href="cursos.html">Cursos</a>
+                                </div>
+                        </li>
+                            <!--Sitios de interés-->
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="sitiosdeinteres.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sitios de interés</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" target="" href="sitiosdeinteres.html">Accesos directos</a>
+                                        <a class="dropdown-item" target="blank" href="https://blogdelcontador.com.ar/">El Blog del Contador</a>
+                                        <a class="dropdown-item" target="blank" href="https://www.errepar.com/">Errepar</a>
+                                        <a class="dropdown-item" target="blank" href="https://www.eco.unc.edu.ar/">FCE</a>
+                                        <a class="dropdown-item" target="blank" href="https://www.ignacioonline.com.ar/">Ignacio Online</a>
+                                    </div>
+                            </li>
+                            <!--Contacto-->
+                            <li class="nav-item active">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                            <!--Acceso a clientes-->
+                            <a class="btn btn-outline-success" href="clientes.html" role="button">Acceso a clientes</a>
+
+
+                            <!--Carrito de compras-->
+
+                            <a class='cart' href="carrito.html">
+                                <img class="cartIcon" src="../multimedia/imagenes/carrito.png" alt="foto del carrito" >
+                                <span id="cartCounter"></span>
+                            </a>
+
+                    </div> <!--Cierra <div class="collapse navbar-collapse colorBarraNavegacion" id="navbarSupportedContent">-->
+                </nav>
+
+            </div> <!--Cierra <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+            </div> <!--Cierra <div class="row colorBarraNavegacion">-->
+        
+        </header>
+
+
+    <!--MAIN-->
+
+        <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <main class="fondo">
+
+            <h1 class="paddingServicios">Servicios Profesionales</h1>
+
+            <!--ADMINISTRACION & CONTABILIDAD-->
+            <section>
+                <h2 class="servicios">Administración & Contabilidad:</h2>
+                <ul>
+                    <li>Asesoramiento en aspectos contables y regulatorios</li>
+                    <li>Auditoria interna de Estados Contables</li>
+                    <li>Confección de Estados Contables</li>
+                    <li>Control interno</li>
+                    <li>Gestión del capital humano</li>
+                    <li>Outsourcing contable</li>
+                </ul>
+            </section>
+            <hr>
+            <!--ECONOMIA & FINANZAS-->
+            <section>
+                <h2 class="servicios">Economía & Finanzas:</h2>
+                <ul>
+                    <li>Asesoramiento en proyectos de inversión</li>
+                    <li>Estrategias de crecimientos</li>
+                    <li>Gestión de costos</li>
+                </ul>
+            </section>
+            <hr>
+            <!--IMPUESTOS-->
+            <section>
+                <h2 class="servicios">Impuestos:</h2>
+                <ul>
+                    <li>Régimen general:</li>
+                    <ul>
+                        <li>Autónomos</li>
+                        <li>Bienes persolanes</li>
+                        <li>Impuesto a las ganancias</li>
+                        <li>Impuesto al valor agregado</li>
+                        <li>Recategorización anual | Autónomos</li>
+                    </ul>
+                    <br>
+                    <li>Régimen simplificado - Monotributo:</li>
+                    <ul>
+                        <li>Adhesión al Monotributo</li>
+                        <li>Modificación Obra Social</li>
+                        <li>Recategorización semestral</li>
+                    </ul>
+                    <br>
+                    <li>Trámites generales:</li>
+                    <ul>
+                        <li>Alta / Baja en Organismos Nacionales, Provinciales y Municipales</li>
+                        <li>Formulario 960/D - Data Fiscal</li>
+                        <li>Modificación de datos</li>
+                        <li>Obtención del CUIT</li>
+                        <li>Plan de Facilidades de Pagos</li>
+                        <li>Reafectación de pagos</li>
+                        <li>Reintegro por cumplimiento de pago</li>
+                    </ul>
+                    <br>
+                    <li>Varios:</li>
+                    <ul>
+                        <li>Certificado de Transferencia del Automotor (CETA)</li>
+                        <li>Empleados de casas particulares</li>
+                        <li>Régimen de facturación</li>
+                        <li>Registro de operaciones inmobiliarias y locaciones de inmuebles</li>
+                    </ul>
+                </ul>
+            </section>
+            <hr>
+            <!--LABORAL & PREVISIONAL-->
+            <section>
+                <h2 class="servicios">Laboral & Previsional:</h2>
+                <p>Asesoramiento respecto de la aplicación de la normativa previsional y laboral, entre ellos:</p>
+                <ul>
+                    <li>Certificación de servicios y remuneraciones</li>
+                    <li>Declaración Jurada Informativa de Conceptos No Remunerativos</li>
+                    <li>Inscripción como Empleador</li>
+                    <li>Habilitaciones comerciales</li>
+                    <li>Libro de Sueldos Digital</li>
+                    <li>Plan de facilidades de pago</li>
+                    <li>Simplificación Registral - Registro de Altas y Bajas de relaciones laborales</li>
+                    <li>SiRADIG - Formulario 572 Web</li>
+                </ul>
+            </section>
+            <hr>
+            <!--SOCIETARIO-->
+            <section>
+                <h2 class="servicios">Societario:</h2>
+                <ul>
+                    <li>Asistencia a las actividades gubernamentales de control</li>
+                    <li>Capacitación a nivel gerencial</li>
+                    <li>Identificación, análisis y valoración de los riesgos de la empresa y el Directorio</li>
+                    <li>Redacción de Códigos de Ética, Políticas y Procedimientos antifraude</li>
+                </ul>
+            </section>
+            <br>
+
+            </main>
+
+        </div>
+        </div>
+
+    </div><!--Cierra <div class="container-fluid">-->
+
+    <!--FOOTER-->
+
+    <div class="footer--formatoFooter">
+        <footer id="footer--formatoFlexbox">
+            <div class="footer--pieDePaginaTamañoUno">
+                <p>¡Seguime en mis redes sociales!
+                    <br>
+                    <br>
+                    <!--Facebook-->
+                    <a target="blank" href="https://www.facebook.com/dario.ventin/" class="footer--linkFooter"><svg
+                            xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                            width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg></a>
+                    <!--Instagram-->
+                    <a target="blank" href="https://www.instagram.com/nanoventin/" class="footer--linkFooter"><svg
+                            xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                            width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                            <circle cx="12" cy="12" r="3" />
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" /></svg></a>
+                    <!--Linkedin-->
+                    <a target="blank" href="https://www.linkedin.com/in/darioventin/" class="footer--linkFooter"><svg
+                            xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
+                            width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <line x1="8" y1="11" x2="8" y2="16" />
+                            <line x1="8" y1="8" x2="8" y2="8.01" />
+                            <line x1="12" y1="16" x2="12" y2="11" />
+                            <path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg></a>
+                    <!--Twitter-->
+                    <a target="blank" href="https://twitter.com/nanoventin" class="footer--linkFooter"><svg
+                            xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="32"
+                            height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                            </svg></a>
+                </p>
+            </div><!--Cierra <div class="pieDePaginaTamañoUno">-->
+            <div class="footer--pieDePaginaTamañoDos">
+                <p>Recibí las noticias más importantes de la semana en tu correo.
+                    <br>
+                    <input type="email" id="email" placeholder="Ingrese su email..." required>
+                    <button type="button" class="btn btn-light">¡Suscribir!</button>
+                </p>
+            </div><!--Cierra <div class="pieDePaginaTamañoDos">-->
+            <div class="footer--pieDePaginaTamañoTres">
+                    <p>Contacto:
+                        <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="12"
+                            height="12" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <polyline points="3 7 12 13 21 7" /></svg> estudioventin@outlook.com
+                        <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp"
+                            width="12" height="12" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                            <path
+                                d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                            </svg> +54 9 351 5640940
+                    </p>
+            </div><!--Cierra <div class=" pieDePaginaTamañoTres">-->
+        </footer> <!--Cierra <footer id="footerFlexbox">-->
+    </div><!--Cierra <div class="footer formatoFooter">-->
+
+
+    <!--BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <!--ENLACE JAVASCRITP-->
+    <script src="/javascript/index.js"></script>
+
+
+</body>
+
+</html>

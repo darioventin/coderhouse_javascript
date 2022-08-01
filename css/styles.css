@@ -1,0 +1,381 @@
+@charset "UTF-8";
+body {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+  body header {
+    background-color: #1B2631;
+    color: #ffffff; }
+  body .nav-item {
+    background-color: #9d8e7e;
+    margin: 2px;
+    border: 3px solid #ffffff;
+    border-radius: 4px;
+    padding: 9px; }
+  body .nav-item:hover {
+    background-color: #00ffff; }
+  body .header--colorBarraNavegacion {
+    background-color: #1B2631; }
+  body .btn {
+    color: cadetblue;
+    border: #00ffff; }
+  body h1 {
+    text-shadow: 2px 1px 8px #9d8e7e;
+    font-family: 'Bree Serif', serif;
+    font-size: 62,5%;
+    font-style: normal;
+    font-weight: lighter; }
+  body h2 {
+    text-shadow: 2px 2px #000000; }
+  body h2, body h3 {
+    color: #ffffff;
+    background-color: #9d8e7e;
+    font-family: 'Source Sans Pro', sans-serif; }
+  body em {
+    color: #6b8e23;
+    font-weight: bold;
+    font-size: 62,5%;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #000000; }
+  body .article__fieldset--formato {
+    background-color: #1B2631;
+    opacity: 70%;
+    color: #ffffff;
+    border: 2px solid #9d8e7e;
+    margin: 5px 0px 10px 0px;
+    padding: 18px; }
+  body .footer--formatoFooter {
+    background-image: linear-gradient(to top, #1B2631, #676779);
+    color: white; }
+  body .footer--linkFooter {
+    text-decoration-line: none;
+    color: #c9e265; }
+
+#navbarSupportedContent{
+  margin-left: 15px;
+}
+
+
+/* Icono: Carrito */
+    .cartIcon{
+      width: 60px;
+  }
+  
+  #cartCounter{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    color: #1B2631;
+    background: white;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: center;
+  }
+
+/*Footer*/
+/*Media Query*/
+/*CELULAR | Tamaño: iPhone: 6/7/8*/
+@media only screen and (max-width: 480px) {
+  .img-fluid {
+    width: 75%; }
+  .footer--pieDePaginaTamañoUno {
+    width: 100%;
+    padding: 6px 10px 15px 20px ; }
+  .footer--pieDePaginaTamañoDos {
+    width: 100%;
+    padding: 6px 10px 15px 20px; }
+  .footer--pieDePaginaTamañoTres {
+    width: 100%;
+    padding: 6px 10px 15px 20px } }
+
+/*TABLET | Tamaño: iPad*/
+@media (min-width: 480px) and (max-width: 1024px) {
+  .img-fluid {
+    width: 50%; }
+  /*Poner tres columnas separadas*/
+  #footer--formatoFlexbox {
+    display: flex;
+    flex-direction: row; }
+  .footer--pieDePaginaTamañoUno {
+    width: 20%;
+    padding: 6px; }
+  .footer--pieDePaginaTamañoDos {
+    width: 40%;
+    padding: 6px; }
+  .footer--pieDePaginaTamañoTres {
+    width: 40%;
+    padding: 6px; } }
+
+/*DESKTOP | Tamaño: Notebook & Escritorio*/
+@media (min-width: 1024px) {
+  /*Poner tres columnas separadas*/
+  #footer--formatoFlexbox {
+    display: flex;
+    flex-direction: row; }
+  .footer--pieDePaginaTamañoUno {
+    width: 20%;
+    padding: 12px; }
+  .footer--pieDePaginaTamañoDos {
+    width: 40%;
+    padding: 12px; }
+  .footer--pieDePaginaTamañoTres {
+    width: 40%;
+    padding: 12px; }
+  .aside__video--tamaño {
+    width: 100%;
+    text-align: center; } }
+
+/*SECCION: INDEX*/
+/*Recuadro: ¡Bienvenidos"*/
+.section__p--italica {
+  font-style: italic; }
+
+/*Recuadro: Novedades*/
+.article__h3--legendNovedades {
+  background-color: #6b8e23;
+  border: 2px solid #9d8e7e;
+  width: 60%;
+  color: #ffffff; }
+
+/*Recuadro: Importante*/
+.aside__h2--efectoAlerta {
+  animation-name: alerta;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  text-align: center; }
+
+@keyframes alerta {
+  0% {
+    opacity: 1,0;
+    background-color: #ff0000;
+    color: #ffffff; }
+  50% {
+    opacity: 0,0;
+    background-color: #ffffff;
+    color: #ff0000; }
+  100% {
+    opacity: 1,0;
+    background-color: #ff0000;
+    color: #ffffff; } }
+
+/*Recuadro: Calendario*/
+.aside__h3--efecto {
+  text-shadow: 2px 2px #000000;
+  color: #ffffff;
+  font-size: 1.5rem; }
+
+.aside__img--formatoImagenCalendario {
+  width: 90%;
+  margin: 5px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  justify-content: center;
+  text-align: center;
+  display: block;
+  margin: auto; }
+
+/*CAROUSEL*/  
+#carouselExampleControls {
+  margin: 0px 0px 10px 0px;
+}
+
+/*SACA TITULO A TODAS LAS SECCIONES MENOS AL INDEX*/
+.tituloSeccion {
+  display: none; }
+
+/*SECCION: SOBRE MI*/
+/*Media Query*/
+/*CELULAR | Tamaño: iPhone: 6/7/8*/
+@media only screen and (max-width: 480px) {
+  .gridsSobreMi {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "imagen1"  "quienSoy" "imagen2" "facultad"; }
+  .imagen1 {
+    grid-area: imagen1;
+    text-align: center;
+    margin: 3px; }
+  .quienSoy {
+    grid-area: quienSoy;
+    padding: 5px;
+    text-align: justify;
+    margin: 3px; }
+  .imagen2 {
+    grid-area: imagen2;
+    margin: 3px;
+    text-align: center; }
+  .main__p--tamañoLetraParrafo {
+    font-size: 1.2rem; }
+  .aside__video--tamaño {
+    width: 100%;
+    text-align: center; } }
+
+/*TABLET | Tamaño: iPad*/
+@media (min-width: 480px) and (max-width: 1024px) {
+  .gridsSobreMi {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.2fr 0.8fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "imagen1 quienSoy"  "imagen2 quienSoy" "facultad facultad"; }
+  .imagen1 {
+    grid-area: imagen1;
+    text-align: center;
+    margin: 3px; }
+  .quienSoy {
+    grid-area: quienSoy;
+    padding: 5px;
+    text-align: justify;
+    margin: 3px; }
+  .imagen2 {
+    grid-area: imagen2;
+    text-align: center;
+    margin: 3px; }
+  .main__p--tamañoLetraParrafo {
+    font-size: 1.2rem; }
+  .aside__video--tamaño {
+    width: 100%;
+    text-align: center; } }
+
+/*DESKTOP | Tamaño: Notebook & Escritorio*/
+@media (min-width: 1024px) {
+  .gridsSobreMi {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "imagen1 quienSoy imagen2" "facultad facultad facultad"; }
+  .imagen1 {
+    grid-area: imagen1;
+    margin: 3px; }
+  .quienSoy {
+    grid-area: quienSoy;
+    padding: 5px;
+    text-align: justify;
+    margin: 3px; }
+  .imagen2 {
+    grid-area: imagen2;
+    margin: 3px;
+    text-align: end; }
+  .main__p--tamañoLetraParrafo {
+    font-size: 1.2rem; } }
+
+/*SECCION: SERVICIOS*/
+/*Fondo - Imagen fija con scroll*/
+.fondo {
+  color: white;
+  background-image: url(../multimedia/imagenes/fondoservicios.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: serif; }
+
+/*h2 quita el formato dado para todas las secciones*/
+.servicios {
+  text-decoration-line: underline;
+  text-decoration-style: unset;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 6px; }
+
+/*Padding*/
+.paddingServicios {
+  padding: 6px; }
+
+.linkSitios {
+  text-decoration-line: #00ffff;
+  text-decoration: underline; }
+
+/*SECCION: SITIOS DE INTERES*/
+/*Margen*/
+.margenSitiosDeInteres {
+  margin: 3px; }
+
+/*Saca el subrayado y los pone en blanco*/
+.sitiosDeInteres a {
+  text-decoration-line: none;
+  color: black; }
+
+/*Formato de los accesos directos*/
+#font {
+  font-family: 'Bree Serif'; }
+
+#font ul li a {
+  text-decoration-line: underline; }
+
+#font ul {
+  list-style-type: none; }
+
+/*Nombre podcast*/
+.nombrePodcast {
+  font-style: italic;
+  background-color: transparent;
+  color: yellowgreen;
+  text-shadow: 1px 1px #000000; }
+
+/*SECCION: CONTACTO*/
+/*Texto: "Enviame tu consulta.."*/
+.contacto {
+  color: #291405;
+  background-color: white;
+  font-size: 62,5%;
+  text-shadow: none;
+  margin: 3px; }
+
+/*Formulario*/
+.row--formatoUbicacion {
+  align-content: center;
+  justify-content: center; }
+
+.row--formatoContacto {
+  align-content: center;
+  justify-content: center; }
+
+.contenedor {
+  margin: 6px;
+  padding: 3px; }
+
+.tamañoCuadroDeMensaje {
+  width: 60%;
+  height: 60%; }
+
+.boletin {
+  color: #ffffff; }
+
+/*Mapa*/
+.tituloUbicacion {
+  margin: 3px; }
+
+.direccion {
+  font-family: sans-serif;
+  font-style: oblique;
+  font-stretch: semi-condensed;
+  font-weight: bold;
+  margin: 3px; }
+
+.fieldset--formato {
+  background-color: #1B2631;
+  color: #ffffff;
+  border: 2px solid #9d8e7e;
+  margin: 5px 0px 10px 0px;
+  padding: 18px; }
+
+.button--colorBotonContacto {
+  color: #ffffff; }
+
+.btn--facebook {
+  background-color: #3b5998; }
+
+.btn--linkedin {
+  background-color: #0e76a8; }
+
+.btn--twitter {
+  background-color: #00acee; }

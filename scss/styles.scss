@@ -1,0 +1,545 @@
+//Variables://
+
+//Paleta de colores//
+$color1: #1B2631; //Azul marino//
+$color2: #9d8e7e; //Piedra esculpida//
+$color3: #ffffff; //Blanco//
+$color4: #000000; //Negro//
+$color5: #00ffff; //Cyan//
+$color6: #6b8e23; //Verde//
+$color7: #ff0000; //Rojo//
+
+//Unidades//
+$padding: 3px;
+$padding2: 6px;
+$border: 3px;
+$margin: 3px;
+
+//Fuentes//
+$tamañoFuente: 62,50%;
+
+
+//Estilos para todas las secciones//
+
+body{
+    padding: $padding - 3px;
+    border: $border - 3px;
+    margin: $margin - 3px;
+    box-sizing: border-box;
+    
+    header {
+        background-color: $color1;
+        color: $color3;
+        }
+        
+        .nav-item {
+            background-color: $color2;
+            margin:$margin - 1;
+            border: $border solid $color3;
+            border-radius: 4px;
+            padding: $padding * 3;
+        }
+
+        .nav-item:hover{
+            background-color: $color5;
+        }
+
+        .header--colorBarraNavegacion{
+            background-color:$color1;
+        }
+        
+        .btn{
+            color:cadetblue;
+            border:$color5
+            }
+
+    h1 {
+        text-shadow: 2px 1px 8px $color2;
+        font-family: 'Bree Serif', serif;
+        font-size: 62,5%;
+        font-style: normal;
+        font-weight: lighter;
+        }
+
+    h2 {
+        text-shadow: 2px 2px $color4;
+        }
+
+    h2, h3 {
+        color: $color3;
+        background-color: $color2;
+        font-family: 'Source Sans Pro', sans-serif;
+        }
+    
+    em {
+        color: $color6;
+        font-weight: bold;
+        font-size: 62,5%;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        text-shadow: 1px 1px $color4;
+    }
+
+    .article__fieldset--formato{
+        background-color: $color1;
+        opacity: 70%;
+        color: $color3;
+        border: 2px solid $color2;
+        margin: 5px 0px 10px 0px;
+        padding: $padding * 6
+    }
+
+    .footer--formatoFooter {
+        background-image: linear-gradient(to top, #1B2631 , #676779);
+        color: white;
+    }
+
+
+    .footer--linkFooter {
+        text-decoration-line: none;
+        color: #c9e265;
+    }
+
+}
+
+/*Footer*/
+
+/*Media Query*/
+
+    /*CELULAR | Tamaño: iPhone: 6/7/8*/
+
+    @media only screen and (max-width: 480px) {
+
+        .img-fluid{
+            width: 75%
+        }
+
+        .footer--pieDePaginaTamañoUno {
+            width: 100%;
+            padding: $padding2
+        }
+        .footer--pieDePaginaTamañoDos {
+            width: 100%;
+            padding: $padding2
+        }
+        .footer--pieDePaginaTamañoTres {
+            width: 100%;
+            padding: $padding2;
+        }
+    }
+
+/*TABLET | Tamaño: iPad*/
+        
+    @media (min-width: 480px) and (max-width: 1024px) {
+        
+        .img-fluid{
+            width: 50%
+        }
+
+        /*Poner tres columnas separadas*/
+        #footer--formatoFlexbox {
+        display: flex;
+        flex-direction: row;
+        }
+        
+        .footer--pieDePaginaTamañoUno {
+            width: 20%;
+            padding: $padding2;
+        }
+        .footer--pieDePaginaTamañoDos {
+            width: 40%;
+            padding: $padding2;
+        }
+        .footer--pieDePaginaTamañoTres {
+            width: 40%;
+            padding: $padding2
+            }
+        }
+
+/*DESKTOP | Tamaño: Notebook & Escritorio*/
+
+    @media  (min-width: 1024px) {
+        
+        
+        /*Poner tres columnas separadas*/
+        #footer--formatoFlexbox {
+            display: flex;
+            flex-direction: row;
+        
+        }
+        .footer--pieDePaginaTamañoUno {
+            width: 20%;
+            padding: $padding2*2
+        
+        }
+        .footer--pieDePaginaTamañoDos {
+            width: 40%;
+            padding: $padding2*2
+        }
+
+        .footer--pieDePaginaTamañoTres {
+            width: 40%;
+            padding: $padding2*2
+        }
+
+        .aside__video--tamaño{
+        width: 100%;
+        text-align: center;
+        }
+
+    }
+
+
+/*SECCION: INDEX*/
+
+/*Recuadro: ¡Bienvenidos"*/
+
+    .section__p--italica {
+        font-style: italic;
+    }
+
+/*Recuadro: Novedades*/
+
+    .article__h3--legendNovedades {
+        background-color: $color6;
+        border: 2px solid $color2;
+        width:60%;
+        color: $color3
+    }
+
+/*Recuadro: Importante*/
+
+    .aside__h2--efectoAlerta {
+        animation-name: alerta;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        text-align: center;
+    }
+
+    @keyframes alerta {  
+        0% { 
+            opacity:1,0; 
+            background-color:$color7;
+            color: $color3
+        }
+        
+        50% {
+            opacity:0,0;
+            background-color: $color3;
+            color:$color7
+        }
+        
+        100% { opacity: 1,0;
+            background-color: $color7;
+            color:$color3;
+        }
+    }
+
+/*Recuadro: Calendario*/
+
+    .aside__h3--efecto{
+        text-shadow: 2px 2px $color4;
+        color: $color3;
+        font-size: 1.5rem
+    }
+
+    .aside__img--formatoImagenCalendario {
+        width: 90%;
+        margin: 5px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        justify-content: center;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+
+
+/*SACA TITULO A TODAS LAS SECCIONES MENOS AL INDEX*/
+
+.tituloSeccion {
+display: none;
+}
+
+
+/*SECCION: SOBRE MI*/
+
+/*Media Query*/
+
+    /*CELULAR | Tamaño: iPhone: 6/7/8*/
+
+        @media only screen and (max-width: 480px) {
+        
+            .gridsSobreMi {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.2fr 0.2fr 0.2fr;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                    "imagen1" 
+                    "quienSoy"
+                    "imagen2"
+                    "facultad";
+            }
+            
+            .imagen1 {
+                grid-area: imagen1;
+                text-align: center;
+                margin:3px
+            }
+
+            .quienSoy {
+                grid-area: quienSoy;
+                padding: 5px;
+                text-align: justify;
+                margin:3px
+            }
+            
+            .imagen2 {
+                grid-area: imagen2;
+                margin:3px;
+                text-align: center
+            }
+
+            .main__p--tamañoLetraParrafo {
+                font-size: 1.2rem;
+            }
+
+            .aside__video--tamaño{
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+
+    /*TABLET | Tamaño: iPad*/
+            
+        @media (min-width: 480px) and (max-width: 1024px) {
+            
+            .gridsSobreMi {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 0.2fr 0.8fr 0.2fr;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                    "imagen1 quienSoy" 
+                    "imagen2 quienSoy"
+                    "facultad facultad";
+            }
+            
+            .imagen1 {
+                grid-area: imagen1;
+                text-align: center;
+                margin:$margin
+            }
+
+            .quienSoy {
+                grid-area: quienSoy;
+                padding: 5px;
+                text-align: justify;
+                margin:$margin
+            }
+            
+            .imagen2 {
+                grid-area: imagen2;
+                text-align: center;
+                margin:$margin
+            }
+
+            .main__p--tamañoLetraParrafo {
+                font-size: 1.2rem;
+            }
+
+            .aside__video--tamaño{
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+
+
+    /*DESKTOP | Tamaño: Notebook & Escritorio*/
+    
+        @media  (min-width: 1024px) {
+            
+            
+            .gridsSobreMi {
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-template-rows: 0.2fr 0.2fr;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                    "imagen1 quienSoy imagen2"
+                    "facultad facultad facultad";
+            }
+            
+            .imagen1 {
+                grid-area: imagen1;
+                margin:3px
+            }
+
+            .quienSoy {
+                grid-area: quienSoy;
+                padding: 5px;
+                text-align: justify;
+                margin:3px
+            }
+            
+            .imagen2 {
+                grid-area: imagen2;
+                margin:3px;
+                text-align: end
+            }
+
+            .main__p--tamañoLetraParrafo {
+                font-size: 1.2rem;
+            }
+
+        }
+
+
+/*SECCION: SERVICIOS*/
+
+/*Fondo - Imagen fija con scroll*/
+    .fondo {
+        color: white;
+        background-image: url(../multimedia/imagenes/fondoservicios.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size:cover;
+        font-family: serif;
+        }
+
+/*h2 quita el formato dado para todas las secciones*/
+    .servicios {
+    text-decoration-line: underline;
+    text-decoration-style: unset;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: $padding2;
+    }
+
+/*Padding*/
+    .paddingServicios{
+        padding: $padding2;
+    }
+
+.linkSitios{
+    text-decoration-line: $color5;
+    text-decoration: underline;
+}
+
+/*SECCION: SITIOS DE INTERES*/
+
+/*Margen*/
+    .margenSitiosDeInteres{
+        margin:$margin
+    }
+
+/*Saca el subrayado y los pone en blanco*/
+    .sitiosDeInteres a {
+        text-decoration-line: none;
+        color: black;
+    }
+
+/*Formato de los accesos directos*/
+    #font {
+        font-family: 'Bree Serif'
+    }
+
+    #font ul li a {
+        text-decoration-line: underline;
+    }
+
+    #font ul {
+        list-style-type: none;
+    }
+
+/*Nombre podcast*/
+    .nombrePodcast {
+        font-style: italic;
+        background-color: transparent;
+        color: yellowgreen;
+        text-shadow: 1px 1px #000000
+    }
+
+
+/*SECCION: CONTACTO*/
+
+/*Texto: "Enviame tu consulta.."*/
+.contacto {
+    color: #291405;
+    background-color: white;
+    font-size: 62,5%;
+    text-shadow: none;
+    margin: $margin
+}
+
+/*Formulario*/
+.row--formatoUbicacion{
+    align-content: center;
+    justify-content: center;
+}
+
+.row--formatoContacto{
+    align-content: center;
+    justify-content: center;
+}
+
+.contenedor {
+    margin: $margin*2;
+    padding: $padding;
+}
+
+
+.tamañoCuadroDeMensaje {
+    width: 60%;
+    height: 60%;
+}
+
+.boletin{
+    color:#ffffff
+}
+
+/*Mapa*/
+
+.tituloUbicacion{
+    margin: $margin
+}
+
+.direccion{
+    font-family: sans-serif;
+    font-style: oblique;
+    font-stretch: semi-condensed;
+    font-weight: bold;
+    margin: $margin;
+}
+
+.fieldset--formato{
+    background-color: $color1;
+    color: $color3;
+    border: 2px solid $color2;
+    margin: 5px 0px 10px 0px;
+    padding: $padding * 6  }
+
+    .button--colorBotonContacto{
+        color: $color3
+    }
+
+
+//Redes sociales//
+
+$redes: (
+facebook: #3b5998,
+linkedin: #0e76a8,
+twitter:  #00acee 
+);
+
+@each $red, $color in $redes {
+.btn--#{$red} {
+background-color: $color;
+}
+}
